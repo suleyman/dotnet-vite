@@ -18,6 +18,7 @@ const viteConfig = defineConfig({
         home: resolve(__dirname, "src/pages/home/home.ts"),
         about: resolve(__dirname, "src/pages/about/about.ts"),
         contact: resolve(__dirname, "src/pages/contact/contact.ts"),
+        spa: resolve(__dirname, "src/pages/spa/spa.ts"),
       },
     },
   },

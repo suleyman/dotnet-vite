@@ -1,0 +1,16 @@
+﻿@{
+	ViewBag.Title = "title";
+}
+@section scripts
+{
+	<!-- if development -->
+	<script type="module" src=@("http://localhost:3000/@vite/client")></script>
+	<script type="module" src="http://localhost:3000/src/pages/spa/spa.ts"></script>
+	<!-- if production -->
+	@* <link rel="stylesheet" href="/assets/{{ manifest['main.js'].css }}" /> *@
+  @* <script type="module" src="/assets/{{ manifest['main.js'].file }}"></script> *@
+}
+
+<div id="spaApp">
+	<router-view />
+</div>
