@@ -1,5 +1,6 @@
 import { createWebHistory, createRouter, RouteRecordRaw } from "vue-router";
 import List from "@/pages/spa/views/list.vue";
+import Detail from "@/pages/spa/views/detail.vue";
 
 const routes: RouteRecordRaw[] = [
   {
@@ -10,6 +11,11 @@ const routes: RouteRecordRaw[] = [
     path: "/list",
     name: "List",
     component: List,
+  },
+  {
+    path: "/detail",
+    name: "Detail",
+    component: Detail,
   },
 ];
 

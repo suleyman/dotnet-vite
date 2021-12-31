@@ -1,7 +1,9 @@
 <template>
   <div class="list-page">
     <ul>
-      <li v-for="item in list" :key="item">{{ item }}</li>
+      <li v-for="item in list" :key="item">
+        <router-link to="/detail">{{ item }}</router-link>
+      </li>
     </ul>
   </div>
 </template>
@@ -20,7 +22,7 @@ export default defineComponent({
 
     return {
       list
-    }
+    };
   }
 });
 
