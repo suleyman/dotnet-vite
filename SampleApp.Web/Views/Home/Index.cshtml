@@ -1,0 +1,21 @@
+﻿@{
+	ViewBag.Title = "Home Page";
+}
+
+@section scripts
+{
+	<!-- if development -->
+	<script type="module" src=@("http://localhost:3000/@vite/client")></script>
+	<script type="module" src="http://localhost:3000/src/pages/home/home.ts"></script>
+	<!-- if production -->
+	@* <link rel="stylesheet" href="/assets/{{ manifest['main.js'].css }}" /> *@
+  @* <script type="module" src="/assets/{{ manifest['main.js'].file }}"></script> *@
+}
+
+<div id="homePageApp">
+	<h1>{{ title }}</h1>
+	<p>
+		{{ message }}
+	</p>
+	<button type="button" @@click="count++">count is: {{ count }}</button>
+</div>

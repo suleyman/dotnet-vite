@@ -1,0 +1,20 @@
+﻿@{
+	ViewBag.Title = "About";
+}
+
+@section scripts
+{
+	<!-- if development -->
+	<script type="module" src=@("http://localhost:3000/@vite/client")></script>
+	<script type="module" src="http://localhost:3000/src/pages/about/about.ts"></script>
+	<!-- if production -->
+	@* <link rel="stylesheet" href="/assets/{{ manifest['main.js'].css }}" /> *@
+  @* <script type="module" src="/assets/{{ manifest['main.js'].file }}"></script> *@
+}
+
+<div id="aboutPageApp">
+	<h1>{{ title }}</h1>
+	<p>
+		{{ message }}
+	</p>
+</div>
