@@ -1,3 +1,4 @@
+import "./contact.scss"
 import { createApp, ref } from "vue";
 
 const contactPageApp = createApp({

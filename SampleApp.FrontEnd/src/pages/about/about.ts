@@ -1,3 +1,4 @@
+import "./about.scss"
 import { createApp, ref } from "vue";
 
 const aboutPageApp = createApp({
