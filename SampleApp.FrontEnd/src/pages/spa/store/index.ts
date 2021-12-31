@@ -11,13 +11,13 @@ export const store = createStore<State>({
     };
   },
   actions: {
-    increase({ commit }, payload) {
+    increase({ commit }, payload: number) {
       commit("INCREASE", payload);
     }
   },
   mutations: {
-    INCREASE(state, payload) {
-      state.counter = payload;
+    INCREASE(state, payload: number) {
+      state.counter += payload;
     }
   }
 });
